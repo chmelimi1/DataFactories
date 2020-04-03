@@ -129,19 +129,19 @@
 		"parameters": {
 			"SourceFileFolder": {
 				"type": "string",
-				"defaultValue": "sourcefolder"
+				"defaultValue": "source"
 			},
 			"SourceFileDirectory": {
 				"type": "string",
-				"defaultValue": "subfolder"
+				"defaultValue": "UserRegion"
 			},
 			"DestinationFileFolder": {
 				"type": "string",
-				"defaultValue": "destinationfolder"
+				"defaultValue": "sink"
 			},
 			"DestinationFileDirectory": {
 				"type": "string",
-				"defaultValue": "subfolder"
+				"defaultValue": "UserRegion"
 			}
 		},
 		"annotations": []

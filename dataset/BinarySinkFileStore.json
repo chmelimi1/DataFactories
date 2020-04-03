@@ -9,7 +9,7 @@
 		"parameters": {
 			"container": {
 				"type": "string",
-				"defaultValue": "Sink"
+				"defaultValue": "sink"
 			},
 			"directory": {
 				"type": "string",
