@@ -3,15 +3,17 @@
 	"properties": {
 		"description": "Connection to your destination data store.",
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "ADLSSink",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"container": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Sink"
 			},
 			"directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "UserRegion"
 			}
 		},
 		"annotations": [],

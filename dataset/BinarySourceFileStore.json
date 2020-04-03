@@ -3,15 +3,17 @@
 	"properties": {
 		"description": "Connection to your source data store.",
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "ADLS",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
 			"container": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "source"
 			},
 			"directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "UserRegion"
 			}
 		},
 		"annotations": [],
@@ -19,14 +21,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": {
-					"value": "@dataset().directory",
-					"type": "Expression"
-				},
-				"fileSystem": {
-					"value": "@dataset().container",
-					"type": "Expression"
-				}
+				"folderPath": "@dataset.directory",
+				"fileSystem": "@dataset.container"
 			}
 		}
 	}
